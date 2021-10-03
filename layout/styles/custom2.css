@@ -1,0 +1,76 @@
+/*
+Responsive Template Name: RS-1200 Prototype 38
+File: Custom CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+/* ----------------------------------------------Wrapper-------------------------------------*/
+
+div.wrapper, .wrapper100{display:block; width:100%; margin:0; padding:0; text-align:left; word-wrap:break-word;}
+/* ---------------------------------------------header color / blue & gray -----------------*/
+.row1, .row1 a{color:#FFFFFF; background-color:#003366;}
+/* ---------------------------------------------navigation ends-------------------------*/
+.row2{color:#666666; background-color:#F0F8FF; border-bottom:1px solid #FFFFFF;}
+/* ------------------------------------- TESTAMONIAL TYPE TEXT next row---------------------*/
+.row3{color:#666666; background-color:#FFFFFF;}
+.row4, .row4 a{color:#919191; background-color:#003366;}
+.row5{color:#666666; background-color:#FFFFFF; border-bottom:1px solid #E5E4E3;}
+.row6{color:#003366; background-color:#99ccff;}
+.row7{color:#FFFFFF; background-color:#b14a3b;}
+
+/*----------------------------------------------Generalise-------------------------------------*/
+
+body{font-family:Arial, Helvetica, sans-serif;}
+
+h1, h4, h5, h6{margin:0 0 30px 0; font-size:1.8em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;}
+
+h2{margin:0 0 30px 0; font-size:1.5em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height;normal; text-transform:none;}
+
+h3{margin:0 0 8px 0; font-size:1.5em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height;normal; text-transform:none; color:#800000;}
+
+h7{margin:0 0 30px 0; font-size:1.2em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;}
+
+h8{margin:0 0 30px 0; font-size:1.8em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;}
+
+h9{margin:0 0 30px 0; font-size:1.6em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:1.5; text-transform:none;}
+
+h10{margin:0 0 30px 0; font-size:1.0em; font-family: Arial, Helvetica, sans-serif; font-weight:italic; line-height:normal; text-transform:italic; color:#003366; text-align: center;}
+
+address{margin:10px 0; font-style:normal;}
+
+nav ul{margin:0; padding:0; list-style:none;}
+
+#header, #topnav, #intro, #container, #footer, #copyright{margin:0 auto;}
+
+
+div.ex1 {
+    width: 1000px;
+    margin: auto;
+    border: 0;
+}
+
+/* line padding */
+
+.pad {
+  padding-top: 25px ;
+}
+
+.pada {
+  padding-top: 50px ;
+}
+
+.padb {
+  padding-top: 75px ;
+}
+.padc {
+  padding-top: 100px ;
+}
+
+img{width:auto; max-width:95%; height:auto; margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;}
+.boxholder{padding:9px; border:1px solid #D6D6D6;}
+.imgl{float:left; margin:0 15px 10px 0; clear:left;}
+.imgr{float:right; margin:0 0 10px 15px; clear:right;}
+
+.button-mail{display:inline-block; border: none; font-weight:bold; text-transform:uppercase; color: #fff }
