@@ -408,6 +408,10 @@ div .ex1 {
       padding-left: 1em;
 }
 
+.left-pad-big {
+      padding-left: 4em;
+}
+
 .one_eighth {
       width: 12.5%;
       margin: 0;
@@ -514,6 +518,7 @@ div .ex1 {
       font-size: 1.85em;
       line-height: 1.3em;
       color: blue;
+      width: 30%;
 }
 
 .right-pad {
@@ -717,6 +722,20 @@ ul img {
       justify-content: flex-start;
       align-items: center;
       width: 98%;
+}
+
+#respond {
+      padding-top: 5em;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: row wrap;
+}
+
+#respond a {
+      font-size: 1.85em;
+      color: blue;
 }
 
 #second {
