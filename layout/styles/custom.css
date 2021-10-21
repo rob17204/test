@@ -713,8 +713,9 @@ ul img {
 
 #photo-fix {
       display: flex;
-      width: 55em;
+      width: 100%;
       height: auto;
+      padding-right: 10px;
 }
 
 #registration {
