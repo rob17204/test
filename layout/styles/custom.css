@@ -45,8 +45,8 @@ h3 span {
 h4 {margin:0 0 15px 0; padding: 0; font-size:1.6em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:1.5; text-transform:none;}  /* used in footer phone #  */
 
 h5{margin:0 0 30px 0; font-size:1.8em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;}
-
-h6{ margin:0; font-size:1.2em; padding: .1em 0 1.3em .5em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;}
+/* --  for the font in the blue box below full image  -- */
+h6{ font-size:1.8em; padding: .1em 0 .1em .1em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;}
 
 /*  -- h7 is now h4  */
 h7{margin:0 0 30px 0; font-size:1.3em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;}
@@ -93,12 +93,12 @@ p {font-size: 1.50em; line-height: 1.75em; padding: 10px 0 10px 0; font-family: 
       justify-content: flex-start;
       align-items: center;
       flex-direction: column;
-
 }
 
 #header h2{
       font-size:2em;
 }
+
 #header h3{
       font-size:1em;
 }
@@ -408,6 +408,24 @@ div .ex1 {
       padding-left: 1em;
 }
 
+.one_eighth {
+      width: 12.5%;
+      margin: 0;
+      padding: 0;
+}
+
+.four_eighth {
+      width: 50%;
+      margin: 0;
+      padding: 0;
+}
+
+.six_eighth {
+      width: 75%;
+      margin: 0;
+      padding: 0;
+}
+
 .magic-image img {
       display: flex;
       justify-content: center;
@@ -468,6 +486,12 @@ div .ex1 {
       width: auto;
 }
 
+.one_half-checks {
+      margin: 0;
+      padding: 0 0 0 2%;
+      width: 51%;
+}
+
 .pay-buttons {
       width: 99%;
       height: auto;
@@ -475,6 +499,15 @@ div .ex1 {
       justify-content: space-between;
       align-items: center;
       flex-flow: row nowrap;
+}
+
+.pricingtable-wrapper, .pricingtable, .pricingtable-title  {
+      background-color:#F0F8FF; /* light blue */
+}
+
+.pricingtable-wrapper.rnd10 .pricingtable-title, .pricingtable-wrapper.rnd10 .pricingtable-price {
+      color: #ffffff;
+      background-color: #003366; /* dark blue */
 }
 
 .reach a{
@@ -558,6 +591,7 @@ ul p {
       font-size: .98em;
       line-height: normal;
       padding: 1px 0 1px 0;
+      text-indent: -.4em;
 }
 
 ul img {
@@ -596,6 +630,13 @@ ul img {
 
 #bright {
       color: blue;
+}
+
+#checks {
+      display: inline;
+      justify-content: flex-start;
+      align-items: center;
+      flex-flow: row nowrap;
 }
 
 #color {
@@ -656,6 +697,15 @@ ul img {
       text-align: center;
 }
 
+#packages {
+      padding: .5em 0 .5em 0;
+      margin: 0 8px 0 8px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      width: 98%;
+}
+
 #photo-fix {
       display: flex;
       width: 55em;
@@ -666,7 +716,7 @@ ul img {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      width: 100%;
+      width: 98%;
 }
 
 #second {
@@ -700,9 +750,11 @@ ul img {
 
 #testimonials {
       padding: 4.5em 0 2.5em 0;
+      margin: 0 8px 0 8px;
       border-bottom: 1px lightgray;
       border-style: solid;
       border-top: none;
       border-left: none;
       border-right: none;
+      width: 98%;
 }
