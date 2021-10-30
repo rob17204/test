@@ -26,7 +26,7 @@ body{font-family:Arial, Helvetica, sans-serif;}
 
 h1 {padding: 10px 0 10px 0; font-size:1.50em; line-height: 1.75em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;} /*  Used as first headline of page as page topic */
 
-h2 {margin: .8em 0 2em 0; font-size:1.8em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none; }
+h2 {margin: 0 0 2em 0; font-size:1.8em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none; }
 
 h3 {padding: 10px 0 10px 0; margin: 0; font-size:2em; line-height: 1.75em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;} /* used in bluebars other than first one of page  */
 
@@ -48,14 +48,6 @@ h5{margin:0 0 30px 0; font-size:1.8em; font-family: Arial, Helvetica, sans-serif
 /* --  for the font in the blue box below full image  -- */
 h6{ font-size:1.8em; padding: .1em 0 .1em .1em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;}
 
-/*  -- h7 is now h4  */
-h7{margin:0 0 30px 0; font-size:1.3em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;}
-/* -------- WEEDING OUT THESE BAD H CALLS  h8 is now h2 ----------- */
-h8{margin:0 0 30px 0; font-size:1.8em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:normal; text-transform:none;}
-/* -- h9 is now h4 and h2 in blue bar other than top one  --*/
-h9{margin:0 0 30px 0; font-size:1.6em; font-family: Arial, Helvetica, sans-serif; font-weight:normal; line-height:1.5; text-transform:none;}
-
-h10{margin:0 0 30px 0; font-size:1.0em; font-family: Arial, Helvetica, sans-serif; font-weight:italic; line-height:normal; text-transform:italic; color:#003366; text-align: center;}
 
 address{margin:10px 0; font-style:normal;}
 
@@ -63,20 +55,26 @@ nav ul{margin:0; padding:0; list-style:none;}
 
 #header, #topnav, #intro, #container, #footer, #copyright{margin:0 auto;}
 
+#footer {
+      padding-left: .5em;
+      padding-right: .5em;
+}
+
 p {font-size: 1.50em; line-height: 1.75em; padding: 10px 0 10px 0; font-family: Arial, Helvetica, sans-serif; font-weight:normal; text-transform:none;}
 
 /*----------------------------------------------Header-------------------------------------*/
 
-#header{padding:20px 0 20px 10px;}
+#header{padding: 0 0 0 0;}
 
 #header {
       display:flex;
       flex-direction: row;
       width:100%;
       clear:right;
+      max-width: 100%;
 }
 #header h1{
-      margin: 0 0 0 10px;
+      margin: 0 0 0 0;
       font-weight:normal;
       text-transform:none;
       display: flex;
@@ -86,7 +84,7 @@ p {font-size: 1.50em; line-height: 1.75em; padding: 10px 0 10px 0; font-family: 
 }
 
 #header h2 {
-      margin: 0 0 0 10px;
+      margin: 0 0 0 0;
       font-weight:normal;
       text-transform:none;
       display: flex;
@@ -104,23 +102,24 @@ p {font-size: 1.50em; line-height: 1.75em; padding: 10px 0 10px 0; font-family: 
 }
 
 #header #header-contact div {
-      display: flex; justify-content:
-      flex-end; align-items: flex-end;
+      display: flex;
+      justify-content:flex-start;
+      align-items: flex-end;
       flex-flow: column;
 }
 #header #header-contact {
       display:flex;
       flex-direction: row;
-      width:auto;
-      clear:right;
+      width: 100%;
+      clear: right;
 }
 #header #header-contact ul{
-      margin-top:15px;
+      margin-top: 5px;
 }
 #header #header-contact li{
       display:inline;
-      margin:0 0 0 5px;
-      padding:10px 0 0 5px;
+      margin:0 0 0 0;
+      padding: 0 0 0 0;
       border-left:none;
 }
 #header #header-contact li:first-child{
@@ -142,19 +141,33 @@ p {font-size: 1.50em; line-height: 1.75em; padding: 10px 0 10px 0; font-family: 
       line-height: normal;
 }
 
+#header img {
+      padding: 0 4em 0 0;
+      height: 9em;
+      width: auto;
+}
+
+@media screen and (min-width: 1200px)
+#header, #topnav, #intro, #container, #footer, #copyright, .stretched {
+    max-width: 2400px;
+}
+
+header {
+      max-width: 100%;
+}
 /*----------------------------------------------------------------------------------------*/
 /*-----------------------------------------Navigation-------------------------------------*/
 /*----------------------------------------------------------------------------------------*/
 
 /* Top Navigation */
 /* -----  NEXT BACKGRND COLOR BACK OF NAV BAR --------           */
-#topnav{padding:0; color:#F0F8FF; background-color:#F0F8FF; clear:both; word-wrap:normal; white-space:nowrap;}
+#topnav{padding:0 0 0 300px; color:#F0F8FF; background-color:#F0F8FF; clear:both; word-wrap:normal; white-space:nowrap; display: flex; align-items: center; }
 #topnav ul{margin:0; padding:0; list-style:none; text-transform:uppercase; font-size:12px;}
 #topnav ul ul{z-index:9999; position:absolute; width:190px; text-transform:none;}
 #topnav ul ul ul, #topnav ul ul ul ul{left:190px; top:0;}
 #topnav ul:first-child li:last-child > ul{right:0;}
 #topnav ul:first-child > li:last-child li > ul{left:-190px;}
-#topnav li{position:relative; display:block; float:left; margin:0 30px 0 0; padding:0;}
+#topnav li{position:relative; display:block; display: flex; justify-content: center; margin:0 30px 0 0; padding:0;}
 #topnav li:first-child{}
 #topnav ul:first-child li:last-child{margin-right:0;}
 #topnav li li{width:100%; margin:0;}
@@ -342,6 +355,10 @@ div .ex1 {
       text-align: left;
 }
 
+.list {
+      margin: 0;
+}
+
 .logo-area, .logo-consulting {
       display: flex;
       justify-content: center;
@@ -514,6 +531,46 @@ div .ex1 {
       background-color: #003366; /* dark blue */
 }
 
+.product-placement-top {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+      height: auto;
+      flex-flow: column;
+      padding: 0 2em 1em 0;
+}
+
+.patient-product-placement-top {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+      height: auto;
+      flex-flow: column;
+      padding: 0 2em 5.2em 0;
+}
+
+.product-placement-middle {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      width: 100%;
+      height: auto;
+      flex-flow: column;
+      padding: 1em 2em 0 0;
+}
+
+.patient-product-placement-middle {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      width: 100%;
+      height: auto;
+      flex-flow: column;
+      padding: 7em 2em 0 0;
+}
+
 .reach a{
       font-size: 1.85em;
       line-height: 1.3em;
@@ -540,6 +597,10 @@ div .ex1 {
 
 .top-pad {
       padding-top: 1.2em;
+}
+
+.top-pad-large {
+      padding-top: 10em;
 }
 
 .topic-image {
@@ -661,6 +722,15 @@ ul img {
 
 }
 
+#consult-videos {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin: 0;
+      padding: 0;
+      width: 32.5%;
+}
+
 #contact-manual {
       text-align: center;
       padding: 8.9em 0 8.9em 0;
@@ -715,7 +785,7 @@ ul img {
       display: flex;
       width: 100%;
       height: auto;
-      padding-right: 10px;
+      padding-right: 0 20px 0 0;
 }
 
 #registration {
